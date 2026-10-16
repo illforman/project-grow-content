@@ -1,7 +1,7 @@
-# Project Grow content — P1 acceptance samples
+# Project Grow 内容
 
-Public synthetic demonstration content only; no live news or executed experiment claims. All editions have SAMPLE labels. This repository contains no model credentials or private project files.
+中文优先的公开示例内容。此仓库仅用于验证阅读、同步与离线缓存，不含实时新闻、已执行实验、模型密钥或私人项目资料。
 
-GitHub Pages: Settings > Pages > Build and deployment > GitHub Actions. Run the manual Validate and deploy static sample workflow. Android content base is https://OWNER.github.io/REPOSITORY/v1/.
+Android 内容地址：https://illforman.github.io/project-grow-content/v1/
 
-Deploy sample A first, synchronize the phone, then update to sample B retaining A history and synchronize again. This tests the fetch/validate/cache/widget chain. Background execution is best-effort. Production content generation is a later phase.
+发布前校验结构、引用与哈希；历史文章保持不可变。

@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "edition_id": "2026-10-14",
+  "revision": 2,
+  "title": "中文样例：一张能离线阅读的知识卡 [SAMPLE]",
+  "summary": "用一个小练习理解应用架构：正文保存在本地，界面负责展示。此内容用于验证中文阅读与同步，不是实时新闻。",
+  "published_at": "2026-10-16T10:26:36Z",
+  "generated_at": "2026-10-16T10:26:36Z",
+  "timezone": "Asia/Hong_Kong",
+  "is_sample": true,
+  "sources": [
+    {
+      "id": "android-docs",
+      "url": "https://developer.android.com/topic/libraries/architecture",
+      "publisher": "Android 开发者官方文档",
+      "title": "应用架构指南",
+      "published_at": null,
+      "retrieved_at": "2026-10-14T12:00:00+08:00"
+    },
+    {
+      "id": "github",
+      "url": "https://github.com/android/nowinandroid",
+      "publisher": "Android 官方 GitHub 组织",
+      "title": "Now in Android 示例项目",
+      "published_at": null,
+      "retrieved_at": "2026-10-14T12:00:00+08:00"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "statement": "示例学习主题：认识界面层与数据层的职责划分。",
+      "evidence": [
+        {
+          "source_id": "android-docs",
+          "excerpt": "资料主题是职责分离；这里是示例性的概括，不是原文引述。"
+        }
+      ]
+    }
+  ],
+  "sections": {
+    "news": {
+      "headline": "中文阅读与自动同步示例",
+      "body": "这是一篇用于验收 Project Grow 的示例内容，并非今天的实时 AI 新闻。你可以先确认手机和桌面小组件都能读到中文，再验证更新、历史记录和离线阅读。正式日报的新闻采集与事实核验将在后续阶段接入。",
+      "event_at": "2026-10-14T12:00:00+08:00",
+      "claim_ids": [
+        "c1"
+      ]
+    },
+    "technology": {
+      "principle": "界面层负责把内容呈现出来，数据层负责保存和提供内容。将两者分开后，阅读页和桌面小组件可以使用同一份本地缓存。",
+      "importance": "理解这条边界，有助于检查断网时是否仍能阅读，以及新内容获取失败时能否保留上一份有效文章。",
+      "limitations": [
+        "这篇示例不证明应用在所有手机上的性能和可靠性；仍需要真机和断网测试。"
+      ],
+      "claim_ids": [
+        "c1"
+      ]
+    },
+    "relevance": {
+      "nora": "可以把经过整理的公开知识放在手边阅读。此示例没有读取或上传 Nora 的私人记忆。",
+      "codex": "可以依据公开文档，帮助检查阅读器的数据缓存与界面职责。",
+      "assumptions": [
+        "你正在了解 Android 阅读器的基本架构。"
+      ],
+      "limitations": [
+        "这里只做公开资料层面的说明，不代表已经接入私人项目或模型 API。"
+      ]
+    },
+    "practice": {
+      "title": "画出一张阅读器的职责图",
+      "prerequisites": [
+        "能打开下方的官方架构文档。",
+        "准备纸笔，或一个简单的记事工具。"
+      ],
+      "steps": [
+        "打开来源中的应用架构指南，找到界面层与数据层的说明。",
+        "画出“内容缓存 → 阅读页”和“内容缓存 → 桌面小组件”两条连接。",
+        "在图上标出：断网时谁提供正文，获取失败时谁保留旧数据。"
+      ],
+      "expected_result": "得到一张简短的职责图。本练习尚未实际执行验证。",
+      "acceptance_criteria": [
+        "界面展示与数据保存分开。",
+        "阅读页和桌面小组件都指向同一份内容缓存。",
+        "能够解释断网后为什么仍可以阅读。"
+      ],
+      "estimated_minutes": 15,
+      "verification_status": "proposed"
+    },
+    "github": {
+      "repository_id": 483402734,
+      "full_name": "android/nowinandroid",
+      "url": "https://github.com/android/nowinandroid",
+      "description": "示例候选：官方 Android 示例应用，可用于观察代码与架构组织方式。",
+      "license_spdx": "Apache-2.0",
+      "archived": false,
+      "checked_at": "2026-10-14T12:00:00+08:00",
+      "recommendation": "适合先阅读它的公开文档和目录结构，练习识别界面层与数据层。",
+      "caveats": [
+        "仓库编号、Apache-2.0 许可证和未归档状态曾在 2026-10-15 核对；示例保留原核查时间，不代表今天重新检查。",
+        "先看文档即可，不自动安装或执行仓库里的工具。"
+      ],
+      "next_step": "打开仓库，先阅读说明文件，再找到一个与数据保存有关的目录。"
+    }
+  }
+}

@@ -1,9 +1,9 @@
 {
-  "article_path": "editions/2026-10-14/r1.json",
+  "article_path": "editions/2026-10-14/r2.json",
   "edition_id": "2026-10-14",
-  "published_at": "2026-10-14T12:00:00+08:00",
-  "release_sequence": 1,
-  "revision": 1,
+  "published_at": "2026-10-16T10:26:36Z",
+  "release_sequence": 2,
+  "revision": 2,
   "schema_version": "1.0",
-  "sha256": "f79775f8d83208f414f99ef518b2f1fcab9149450d2dd19099666155a65b11fb"
+  "sha256": "6b81e39ccefdbd1fdc6db742f543ed8f46a41f8641152fe66cde9fe52793af7f"
 }
