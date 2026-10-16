@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "edition_id": "2026-10-14",
+  "revision": 1,
+  "title": "SAMPLE A — synthetic Project Grow edition",
+  "summary": "SAMPLE: manually authored demonstration; no current-news or executed-practice claim.",
+  "published_at": "2026-10-14T12:00:00+08:00",
+  "generated_at": "2026-10-14T12:00:00+08:00",
+  "timezone": "Asia/Hong_Kong",
+  "is_sample": true,
+  "sources": [
+    {
+      "id": "android-docs",
+      "url": "https://developer.android.com/topic/libraries/architecture",
+      "publisher": "Android Developers",
+      "title": "Guide to app architecture",
+      "published_at": null,
+      "retrieved_at": "2026-10-14T12:00:00+08:00"
+    },
+    {
+      "id": "github",
+      "url": "https://github.com/android/nowinandroid",
+      "publisher": "Android on GitHub",
+      "title": "Now in Android",
+      "published_at": null,
+      "retrieved_at": "2026-10-14T12:00:00+08:00"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "statement": "Synthetic editorial example: explore separation between UI and data layers.",
+      "evidence": [
+        {
+          "source_id": "android-docs",
+          "excerpt": "Reference topic: separation of concerns. This sample is a paraphrase, not a quotation."
+        }
+      ]
+    }
+  ],
+  "sections": {
+    "news": {
+      "headline": "SAMPLE: architecture reading exercise",
+      "body": "Synthetic briefing only. This is not a report of a dated real-world event.",
+      "event_at": "2026-10-14T12:00:00+08:00",
+      "claim_ids": [
+        "c1"
+      ]
+    },
+    "technology": {
+      "principle": "Keep cached content separate from presentation.",
+      "importance": "Synthetic teaching prompt for offline reading.",
+      "limitations": [
+        "This sample does not establish performance or reliability."
+      ],
+      "claim_ids": [
+        "c1"
+      ]
+    },
+    "relevance": {
+      "nora": "Synthetic generic assistant context; no private Nora records used.",
+      "codex": "Use public source material to review a small Android reader.",
+      "assumptions": [
+        "Reader is learning Android architecture."
+      ],
+      "limitations": [
+        "No personal files were used."
+      ]
+    },
+    "practice": {
+      "title": "SAMPLE: inspect an architecture guide",
+      "prerequisites": [
+        "Browser access to official documentation."
+      ],
+      "steps": [
+        "Read the linked architecture guide.",
+        "Sketch UI and data boundaries on paper."
+      ],
+      "expected_result": "A short sketch; proposed exercise only.",
+      "acceptance_criteria": [
+        "Sketch separates UI and data responsibilities."
+      ],
+      "estimated_minutes": 15,
+      "verification_status": "proposed"
+    },
+    "github": {
+      "repository_id": 483402734,
+      "full_name": "android/nowinandroid",
+      "url": "https://github.com/android/nowinandroid",
+      "description": "SAMPLE candidate: official Android sample application.",
+      "license_spdx": "Apache-2.0",
+      "archived": false,
+      "checked_at": "2026-10-14T12:00:00+08:00",
+      "recommendation": "Synthetic recommendation: inspect publicly available architecture examples.",
+      "caveats": [
+        "SAMPLE metadata is illustrative at the synthetic edition timestamp; repository ID, Apache-2.0 license and non-archived state were independently checked on 2026-10-15. Recheck before use.",
+        "Do not automatically install or execute this repository."
+      ],
+      "next_step": "Open the public repository and verify current metadata manually."
+    }
+  }
+}

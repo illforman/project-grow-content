@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "release_sequence": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "edition_id": {
+      "type": "string",
+      "format": "date",
+      "maxLength": 12000
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "published_at": {
+      "type": "string",
+      "format": "date-time",
+      "maxLength": 12000
+    },
+    "article_path": {
+      "type": "string",
+      "pattern": "^editions/\\d{4}-\\d{2}-\\d{2}/r[1-9]\\d*\\.json$",
+      "maxLength": 128
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$",
+      "maxLength": 64
+    }
+  },
+  "required": [
+    "schema_version",
+    "release_sequence",
+    "edition_id",
+    "revision",
+    "published_at",
+    "article_path",
+    "sha256"
+  ],
+  "additionalProperties": false
+}
